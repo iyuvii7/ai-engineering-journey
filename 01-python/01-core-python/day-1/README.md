@@ -1,48 +1,73 @@
-## 1.
-What's the difference between:
-=
-and
-==
+# Day 1 — Python Fundamentals
 
-Ans. (=) is used to asign the value of one veriable to other, e.g, age = 25
+## Objective
 
-Whereas, (==) is used to check if something is equal of other thing,
-if 5 == 5: yes
+The goal of Day 1 was to assess and strengthen my existing Python fundamentals.
 
-## 2.
-What's the difference between:
-list
-tuple
-set
-dictionary
+I focused on:
 
-Answer:
-List: is used to store the value in ordered way. and it is mutable.
+- Variables and data types
+- Arithmetic operators
+- Floor division
+- Lists
+- List indexing
+- List mutation
+- Tuples
+- Sets
+- Dictionaries
+- Loops
+- Functions
+- Basic problem solving
 
-tuple: tuple is un-mutable
+---
 
-set: dont know
+## Python Assessment
 
-dict: is sued key pair to store the data and it uses {}.
+### 1. Assignment vs Equality
 
-# 3. 
-Why would we use a function instead of writing the same code repeatedly?
+`=` is used for assignment.
 
-Ans. It will save computer time and memory.
-
-# 4.
-What happens if you run:
+```python
+age = 25
+== is used to check whether two values are equal.
+5 == 5
+2. Python Data Structures
+List
+A list is an ordered and mutable collection.
+numbers = [10, 20, 30]
+Tuple
+A tuple is an ordered and immutable collection.
+coordinates = (10, 20)
+Set
+A set is a collection of unique values.
+skills = {"Python", "SQL", "Docker"}
+Duplicate values are automatically removed.
+Dictionary
+A dictionary stores data as key-value pairs.
+user = {
+    "name": "Yuvraj",
+    "age": 23
+}
+3. Why Use Functions?
+Functions help with:
+Code reuse
+Organization
+Readability
+Maintainability
+Testing
+Instead of repeating the same logic, the logic can be placed inside a function and reused.
+4. IndexError
+Trying to access an index that doesn't exist causes an IndexError.
 numbers = [1, 2, 3]
 
 print(numbers[10])
-
-Ans. Index error or index value.
-
-# 5.
-What's the difference between:
-for
-and
-while
-
-Ans. Both are loops used in python, but for is usableful when you know how much you want to iterate.
-Also while is useful when you have a condition but dont know how many time you have to iterate.
+This produces:
+IndexError: list index out of range
+5. For vs While
+Both are loops.
+A for loop is generally used to iterate over a collection or sequence.
+for number in numbers:
+    print(number)
+A while loop continues executing while a condition remains true.
+while condition:
+    ...
